@@ -1,0 +1,13 @@
+@import './variables.scss';
+
+.intro {
+    height: 100vh;
+
+    .image-container {
+        width: 40%;
+    }
+
+    .bio-container{
+        width: 60%;
+    }
+}
