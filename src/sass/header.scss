@@ -13,6 +13,11 @@
         color: $white;
         font-size: $medium;
         text-decoration: none;
+
+        &:hover{
+            text-decoration: underline;
+            color: $accentLight;
+        }
     }
 
     @media (max-width: $mobileM) {

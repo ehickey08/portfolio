@@ -9,10 +9,9 @@ export const IntroInfo = () => {
             </div>
             <h3>Full Stack Web Developer</h3>
             <p>
-                "...I tended to just spew out code that was hopelessly broken,
-                and gradually beat it into shape. Debugging, I was taught, was a
-                kind of final pass where you caught typos and oversights. The
-                way I worked, it seemed like programming consisted of debugging."
+                "If I had only looked over at the other makers, the painters or
+                the architects, I would have realized that there was a name for
+                what I was doing: sketching."
             </p>
             <a className='quote' href='http://www.paulgraham.com/hp.html'>
                 - Paul Graham

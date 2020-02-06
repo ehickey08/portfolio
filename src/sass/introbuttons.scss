@@ -5,7 +5,7 @@ $specialQuery2: '(max-width: 400px) and (max-height: 650px)';
 .button-container {
     display: flex;
     justify-content: center;
-    margin-top: 15px;
+    margin-top: 55px;
     width: 100%;
 
     a:first-child {
@@ -52,6 +52,7 @@ $specialQuery2: '(max-width: 400px) and (max-height: 650px)';
     }
 
     @media (max-width: $tablet) {
+        margin-top: 15px;
         a {
             width: 200px;
         }
