@@ -9,13 +9,11 @@ export const Navigation = () => {
                 <li>
                     <a href='#projects'>Projects</a>
                 </li>
-                <hr></hr>
                 <li>
                     <a href={resume} target='_blank' rel='noopener noreferrer'>
                         Resume
                     </a>
                 </li>
-                <hr></hr>
                 <li>
                     <a
                         href='mailto:ehickey08@gmail.com'

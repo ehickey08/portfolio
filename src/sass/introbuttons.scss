@@ -1,0 +1,113 @@
+@import './variables.scss';
+$specialQuery: '(max-width: 500px) and (max-height: 750px)';
+$specialQuery2: '(max-width: 400px) and (max-height: 650px)';
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    width: 100%;
+
+    a:first-child {
+        margin-right: 50px;
+    }
+    a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-decoration: none;
+        border-radius: 5px;
+        border: 1px solid $accentLight;
+        box-shadow: $boxShadow;
+        cursor: pointer;
+        width: 250px;
+        padding: 7px 15px;
+        transition: all 0.5s ease;
+
+        &:hover {
+            transform: scale(1.2);
+            background-color: $accentDark;
+
+            span,
+            h4,
+            .arrow {
+                color: white;
+            }
+        }
+    }
+    span {
+        font-size: $tiny;
+        color: $lightGray;
+    }
+
+    .arrow {
+        font-size: 4rem;
+        color: $accentColor;
+        padding-bottom: 5px;
+    }
+
+    h4 {
+        font-size: 3rem;
+        color: $accentColor;
+    }
+
+    @media (max-width: $tablet) {
+        a {
+            width: 200px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        flex-direction: column;
+
+        a:first-child {
+            margin: 10px auto;
+        }
+
+        a {
+            margin: 10px auto;
+            width: 80%;
+            max-width: 250px;
+        }
+    }
+
+    @media (max-width: $mobileS) {
+        .left-col {
+            margin: 0 auto;
+        }
+        span {
+            display: none;
+        }
+        h4 {
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+
+    @media (max-height: 750px) {
+        flex-direction: row;
+
+        a {
+            width: 45%;
+        }
+    }
+
+    @media #{$specialQuery} {
+        .left-col {
+            margin: 0 auto;
+        }
+        span {
+            display: none;
+        }
+        h4 {
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+
+    @media #{$specialQuery2} {
+        h4 {
+            font-size: $small;
+        }
+    }
+}

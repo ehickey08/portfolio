@@ -1,13 +1,146 @@
 @import './variables.scss';
-
-.intro {
+$special: '(max-width: 769px) and (max-height: 620px)';
+$special2: '(max-height: 600px)';
+.intro.container {
+    justify-content: space-between;
     height: 100vh;
 
     .image-container {
-        width: 40%;
+        width: 35%;
+
+        img {
+            border-radius: 50%;
+            object-fit: contain;
+            width: 100%;
+            height: auto;
+        }
     }
 
-    .bio-container{
-        width: 60%;
+    .bio-container {
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        h1,
+        p {
+            color: $darkGray;
+            text-align: center;
+            margin: 15px 0;
+        }
+
+        p {
+            font-size: $medium;
+        }
+
+        .hr-container {
+            width: 90%;
+            margin: 0 auto;
+        }
+        hr {
+            overflow: visible; /* For IE */
+            padding: 0;
+            border: none;
+            border-top: medium double $accentLight;
+            color: $accentLight;
+            text-align: center;
+        }
+        hr:after {
+            content: '§';
+            display: inline-block;
+            position: relative;
+            top: -1.12rem;
+            font-size: $small;
+            padding: 0 0.4rem;
+            background: white;
+        }
+    }
+
+    @media (max-width: $laptop) {
+        width: 90%;
+
+        h1 {
+            font-size: 7rem;
+        }
+
+        .bio-container {
+            width: 65%;
+        }
+
+        .image-container {
+            width: 30%;
+        }
+    }
+
+    @media (max-width: $tablet) {
+        flex-direction: column-reverse;
+        justify-content: center;
+
+        .image-container {
+            width: 250px;
+        }
+
+        .bio-container {
+            width: 90%;
+
+            h1 {
+                font-size: 6rem;
+            }
+
+            p {
+                font-size: $small;
+            }
+        }
+    }
+
+    @media (max-width: 500px) {
+        .bio-container {
+            h1 {
+                font-size: 5rem;
+            }
+        }
+    }
+
+    @media (max-width: $mobileL) {
+        .bio-container {
+            h1 {
+                font-size: 4rem;
+            }
+        }
+    }
+
+    @media (max-width: $mobileS) {
+        .bio-container {
+            h1 {
+                font-size: 3rem;
+            }
+            p {
+                font-size: $tiny;
+            }
+        }
+    }
+
+    @media (max-height: 900px) {
+        padding-top: 100px;
+    }
+
+    @media (max-height: 850px) {
+        .image-container {
+            width: 200px;
+        }
+    }
+
+    @media (max-height: 675px) {
+        .image-container {
+            width: 150px;
+        }
+    }
+
+    @media #{$special}{
+        height: 100%;
+    }
+
+    @media #{$special2} {
+        height: 100%;
     }
 }

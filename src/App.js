@@ -1,12 +1,12 @@
 import React from 'react';
-import { Navigation, IntroSection, ProjectSection } from './components';
+import { Navigation, IntroContainer, ProjectContainer } from './components';
 
 function App() {
     return (
         <div className='App'>
             <Navigation />
-            <IntroSection />
-            <ProjectSection />
+            <IntroContainer />
+            {/* <ProjectContainer /> */}
         </div>
     );
 }
