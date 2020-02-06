@@ -4,17 +4,19 @@ export const IntroInfo = () => {
     return (
         <div>
             <h1>Ethan Hickey</h1>
-            <div className ='hr-container'>
+            <div className='hr-container'>
                 <hr></hr>
             </div>
+            <h3>Full Stack Web Developer</h3>
             <p>
-                Nam et lorem facilisis, faucibus velit et, pulvinar tortor.
-                Suspendisse non justo efficitur nulla maximus accumsan a eget
-                diam. Nunc fermentum, libero at pharetra ultrices, odio arcu
-                auctor massa, elementum dignissim dolor ante vel elit. Nunc
-                pretium mi nec libero sodales, quis vestibulum erat luctus.
-                Suspendisse laoreet pellentesque
+                "...I tended to just spew out code that was hopelessly broken,
+                and gradually beat it into shape. Debugging, I was taught, was a
+                kind of final pass where you caught typos and oversights. The
+                way I worked, it seemed like programming consisted of debugging."
             </p>
+            <a className='quote' href='http://www.paulgraham.com/hp.html'>
+                - Paul Graham
+            </a>
         </div>
     );
 };
