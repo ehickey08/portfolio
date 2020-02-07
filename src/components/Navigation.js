@@ -7,18 +7,18 @@ export const Navigation = () => {
         <nav className='nav'>
             <ul className='list nav-links container'>
                 <li>
-                    <a href='#projects'>Projects</a>
+                    <a href='#projects'>projects</a>
                 </li>
                 <li>
                     <a href={resume} target='_blank' rel='noopener noreferrer'>
-                        Resume
+                        resume
                     </a>
                 </li>
                 <li>
                     <a
                         href='mailto:ehickey08@gmail.com'
                         rel='noopener noreferrer'>
-                        Contact
+                        contact
                     </a>
                 </li>
             </ul>

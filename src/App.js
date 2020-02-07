@@ -6,7 +6,7 @@ function App() {
         <div className='App'>
             <Navigation />
             <IntroContainer />
-            {/* <ProjectContainer /> */}
+            <ProjectContainer />
         </div>
     );
 }
