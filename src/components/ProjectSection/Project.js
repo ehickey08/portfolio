@@ -11,7 +11,7 @@ export const Project = ({ data }) => {
 
 const ProjectInfo = ({ data }) => {
     return (
-        <div className="info-container">
+        <div className='info-container'>
             <Title liveSite={data.liveSite} title={data.title} />
             <p>{data.description}</p>
             <div className='stack-container'>
@@ -21,7 +21,7 @@ const ProjectInfo = ({ data }) => {
                     </div>
                 ))}
             </div>
-            
+
             <span>
                 <a href={data.repo} target='_blank' rel='noopener noreferrer'>
                     GitHub

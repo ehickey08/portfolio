@@ -39,17 +39,17 @@
         width: 95%;
         height: 400px;
 
-        img{
+        img {
             width: 40%;
             height: auto;
         }
     }
 
-    @media (max-width: $tablet){
+    @media (max-width: $tablet) {
         flex-direction: column;
         justify-content: center;
 
-        img{
+        img {
             width: 50%;
         }
     }
