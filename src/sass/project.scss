@@ -18,8 +18,8 @@
 }
 
 .project {
-    width: 575px;
-    height: 800px;
+    max-width: 575px;
+    max-height: 800px;
     margin: 20px 10px;
     padding: 20px 10px;
     box-shadow: $boxShadow;
