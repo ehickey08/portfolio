@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../sass/intro.scss';
 import { IntroImage, IntroButtons, IntroInfo } from './index';
-import downArrow from '../../assets/down-arrow.svg';
+import { DownOutlined } from '@ant-design/icons';
 
 export const IntroContainer = () => {
     return (
@@ -12,10 +12,11 @@ export const IntroContainer = () => {
                     <IntroButtons />
                 </div>
                 <IntroImage />
+                <i class='fas fa-chevron-down'></i>
             </section>
             <a className='scroll-to' href='#projects'>
                 View Projects
-                <i class="fas fa-chevron-down"></i>
+                <DownOutlined />
             </a>
         </>
     );

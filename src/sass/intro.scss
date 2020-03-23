@@ -170,6 +170,11 @@
     overflow-y: hidden;
     max-height: 100px;
     @include slide-in;
+    display: flex;
+    flex-direction: column;
 
+    span{
+        margin-top: 7px;
+    }
 }
 
