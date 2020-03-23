@@ -1,7 +1,8 @@
 import pythonQuest from '../assets/pythonQuest.png';
 import voluntier from '../assets/voluntier.png';
 import treasure from '../assets/treasure-hunt.png';
-
+import creditCard from '../assets/credit-card.gif';
+import icn from '../assets/tracker-2.png'
 export const projects = [
     {
         title: 'Python Quest',
@@ -106,7 +107,7 @@ export const projects = [
         ],
         liveSite: 'https://icn-tracking.netlify.com/',
         repo: 'https://github.com/intlChildNutrition/intlChildNutrition-FE',
-        image: '',
+        image: icn,
     },
     {
         title: 'Budget Builder',
@@ -133,6 +134,6 @@ export const projects = [
         stack: ['React', 'Styled-Components'],
         liveSite: '',
         repo: 'https://github.com/ehickey08/credit-card-form',
-        image: '',
+        image: creditCard,
     },
 ];

@@ -156,3 +156,20 @@
         }
     }
 }
+
+.scroll-to {
+    position: absolute;
+    top: 88%;
+    left: 50%;
+    width: 20rem;
+    font-size: $large;
+    text-align: center;
+    margin-left: -10.5rem;
+    color: $accentColor;
+    text-decoration: none;
+    overflow-y: hidden;
+    max-height: 100px;
+    @include slide-in;
+
+}
+

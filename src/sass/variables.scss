@@ -1,6 +1,6 @@
-$accentColor: #FFA364;
-$accentDark: #E5813D;
-$accentLight: #FFD2B3;
+$accentColor: #ffa364;
+$accentDark: #e5813d;
+$accentLight: #ffd2b3;
 $darkGray: #444c55;
 $lightGray: #9da3aa;
 $white: #fafafa;
@@ -18,4 +18,53 @@ $laptop: 1090px;
 $laptopL: 1441px;
 $desktop: 2561px;
 
-$boxShadow: rgba(0,0,0,0.12) 2px 3px 10px 0px;
+$boxShadow: rgba(0, 0, 0, 0.12) 2px 3px 10px 0px;
+
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
+}
+
+@mixin animate($name, $duration, $iteration, $direction) {
+    -webkit-animation-duration: $duration;
+    -moz-animation-duration: $duration;
+    -o-animation-duration: $duration;
+    animation-duration: $duration;
+    -webkit-animation-iteration-count: $iteration;
+    -moz-animation-iteration-count: $iteration;
+    -o-animation-iteration-count: $iteration;
+    animation-iteration-count: $iteration;
+    -webkit-animation-name: $name;
+    -moz-animation-name: $name;
+    -o-animation-name: $name;
+    animation-name: $name;
+    -webkit-animation-direction: $direction;
+    -moz-animation-direction: $direction;
+    -o-animation-direction: $direction;
+    animation-direction: $direction;
+}
+
+@include keyframes(slide-in) {
+    from {
+        opacity: 0;
+        top: 100%;
+    }
+    to {
+        opacity: 1;
+        top: 88%;
+    }
+}
+
+@mixin slide-in {
+    @include animate(slide-in, 1.5s, 1, normal);
+}
