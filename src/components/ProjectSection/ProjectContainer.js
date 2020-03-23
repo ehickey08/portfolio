@@ -5,10 +5,13 @@ import { Project } from './Project';
 
 export const ProjectContainer = () => {
     return (
-        <div className='projects container section' id='projects'>
-            {projects.map(project => (
-                <Project key={project.title} data={project} />
-            ))}
-        </div>
+        <>
+            <h2 className="project-header" id='projects'>projects</h2>
+            <div className='projects container section' >
+                {projects.map(project => (
+                    <Project key={project.title} data={project} />
+                ))}
+            </div>
+        </>
     );
 };

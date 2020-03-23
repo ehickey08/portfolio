@@ -3,7 +3,19 @@ import React from 'react';
 export const Project = ({ data }) => {
     return (
         <div className='project'>
-            {data.image && <img src={data.image} alt={`${data.title} photo`} />}
+            <div className='title-container'>
+                <Title liveSite={data.liveSite} title={data.title} />
+                <p>{data.description}</p>
+            </div>
+            {data.image && (
+                <div className='image-container'>
+                    <img
+                        className='project-image'
+                        src={data.image}
+                        alt={`${data.title} screenshot`}
+                    />
+                </div>
+            )}
             <ProjectInfo data={data} />
         </div>
     );
@@ -12,8 +24,14 @@ export const Project = ({ data }) => {
 const ProjectInfo = ({ data }) => {
     return (
         <div className='info-container'>
-            <Title liveSite={data.liveSite} title={data.title} />
-            <p>{data.description}</p>
+            <ul className='roles'>
+                {data.roles.map(role => (
+                    <li className='task' key={role}>
+                        {role}
+                    </li>
+                ))}
+            </ul>
+
             <div className='stack-container'>
                 {data.stack.map(tag => (
                     <div className='tag' key={tag}>
