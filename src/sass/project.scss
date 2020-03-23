@@ -126,12 +126,13 @@
 .clickable {
     cursor: pointer;
     text-decoration: none;
-
-    &:hover{
+    transition: transform 0.5s ease;
+    &:hover {
         transform: scale(1.05);
+        transition: transform 0.5s ease;
     }
 
-    h3{
+    h3 {
         text-decoration: underline;
     }
 }
