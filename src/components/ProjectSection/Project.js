@@ -2,9 +2,9 @@ import React from 'react';
 
 export const Project = ({ data }) => {
     return (
-        <div className='project'>
+        <Wrapper liveSite={data.liveSite}>
             <div className='title-container'>
-                <Title liveSite={data.liveSite} title={data.title} />
+                <h3>{data.title}</h3>
                 <p>{data.description}</p>
             </div>
             {data.image && (
@@ -17,7 +17,7 @@ export const Project = ({ data }) => {
                 </div>
             )}
             <ProjectInfo data={data} />
-        </div>
+        </Wrapper>
     );
 };
 
@@ -48,20 +48,20 @@ const ProjectInfo = ({ data }) => {
         </div>
     );
 };
-const Title = ({ liveSite, title }) => {
+const Wrapper = ({ liveSite, children }) => {
     return (
         <>
             {liveSite ? (
-                <h3>
+                <div className='project clickable'>
                     <a
                         href={liveSite}
                         target='_blank'
                         rel='noopener noreferrer'>
-                        {title}
+                        {children}
                     </a>
-                </h3>
+                </div>
             ) : (
-                <h3>{title}</h3>
+                <div className='project'>{children}</div>
             )}
         </>
     );

@@ -3,6 +3,7 @@ import voluntier from '../assets/voluntier.png';
 import treasure from '../assets/treasure-hunt.png';
 import creditCard from '../assets/credit-card.gif';
 import icn from '../assets/tracker-2.png'
+
 export const projects = [
     {
         title: 'Python Quest',
@@ -131,7 +132,7 @@ export const projects = [
             'Implemented RegEx logic in order to validate credit card information',
             'Used basic CSS along with styled-components to make the form user friendly and interactive',
         ],
-        stack: ['React', 'Styled-Components'],
+        stack: ['React', 'Styled-Components', 'Regular Expressions'],
         liveSite: '',
         repo: 'https://github.com/ehickey08/credit-card-form',
         image: creditCard,

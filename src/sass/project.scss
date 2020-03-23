@@ -1,6 +1,6 @@
 @import './variables.scss';
 
-.project-header{
+.project-header {
     padding: 100px 0 25px;
     text-align: center;
 }
@@ -20,7 +20,7 @@
 .project {
     width: 575px;
     height: 800px;
-    margin: 10px 5px;
+    margin: 20px 10px;
     padding: 20px 10px;
     box-shadow: $boxShadow;
     border: 1px solid $accentLight;
@@ -54,13 +54,13 @@
         font-style: italic;
     }
 
-    .info-container{
+    .info-container {
         width: 95%;
         margin: 0 auto;
         order: 3;
     }
 
-    .title-container{
+    .title-container {
         order: 1;
         margin: 0 auto;
     }
@@ -88,7 +88,7 @@
             width: 49%;
         }
 
-        .stack-container{
+        .stack-container {
             margin-top: 50px;
         }
     }
@@ -110,13 +110,12 @@
     }
 }
 
-
 .roles {
     width: 90%;
     margin: 0 auto;
     list-style: disc;
     list-style-position: outside;
-   
+
     li {
         font-size: $small;
         text-align: left;
@@ -124,3 +123,10 @@
     }
 }
 
+.clickable {
+    cursor: pointer;
+
+    &:hover{
+        transform: scale(1.05);
+    }
+}
