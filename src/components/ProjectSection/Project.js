@@ -52,14 +52,13 @@ const Wrapper = ({ liveSite, children }) => {
     return (
         <>
             {liveSite ? (
-                <div className='project clickable'>
-                    <a
-                        href={liveSite}
-                        target='_blank'
-                        rel='noopener noreferrer'>
-                        {children}
-                    </a>
-                </div>
+                <a
+                    href={liveSite}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='project clickable'>
+                    {children}
+                </a>
             ) : (
                 <div className='project'>{children}</div>
             )}

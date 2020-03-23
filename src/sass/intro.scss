@@ -157,24 +157,28 @@
     }
 }
 
-.scroll-to {
-    position: absolute;
-    top: 88%;
-    left: 50%;
-    width: 20rem;
-    font-size: $large;
-    text-align: center;
-    margin-left: -10.5rem;
-    color: $accentColor;
-    text-decoration: none;
-    overflow-y: hidden;
-    max-height: 100px;
-    @include slide-in;
-    display: flex;
-    flex-direction: column;
+// .scroll-to-container{
+//     position: absolute;
+//     top: 88%;
+//     left: 0;
+//     width: 100%;
+//     display: flex;
+//     justify-content: center;
+//     overflow-y: hidden;
+//     max-height: 100px;
+//     @include slide-in;
+// }
 
-    span{
-        margin-top: 7px;
-    }
-}
+// .scroll-to {
+//     font-size: $large;
+//     color: $accentColor;
+//     text-decoration: none;
+    
+//     display: flex;
+//     flex-direction: column;
+
+//     span{
+//         margin-top: 7px;
+//     }
+// }
 
