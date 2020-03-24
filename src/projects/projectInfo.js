@@ -3,6 +3,8 @@ import voluntier from '../assets/voluntier.png';
 import treasure from '../assets/treasure-hunt.png';
 import creditCard from '../assets/credit-card.gif';
 import icn from '../assets/tracker-2.png'
+import budgetScreenShot from '../assets/budget-shot.PNG'
+import potluckPlanner from '../assets/potluck-planner.png'
 
 export const projects = [
     {
@@ -87,7 +89,7 @@ export const projects = [
         ],
         liveSite: 'https://potluckplannerapp.netlify.com/',
         repo: 'https://github.com/ehickey08/potluckPlanner',
-        image: '',
+        image: potluckPlanner,
     },
     {
         title: 'Child Nutrition Tracker',
@@ -122,7 +124,7 @@ export const projects = [
         stack: ['Express', 'Knex', 'Jest', 'Bcrypt', 'JWT', 'PostgreSQL'],
         liveSite: 'https://dv-empathy.herokuapp.com/',
         repo: 'https://github.com/DV-Empathy-Builder/back-end',
-        image: '',
+        image: budgetScreenShot,
     },
     {
         title: 'Credit Card Form',
