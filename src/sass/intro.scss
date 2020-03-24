@@ -87,7 +87,7 @@
     @media (max-width: $tablet) {
         flex-direction: column-reverse;
         justify-content: center;
-
+        min-height: 800px;
         .image-container {
             width: 250px;
         }
