@@ -1,0 +1,27 @@
+@import './variables.scss';
+
+.skills {
+    flex-direction: column;
+
+    h2 {
+        margin-bottom: 15px;
+    }
+
+    h3{
+        margin: 10px 0;
+    }
+}
+
+.skill-group-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill {
+    background: $accentLight;
+    font-size: $small;
+    padding: 5px 7px;
+    border-radius: 5px;
+    margin: 5px;
+}

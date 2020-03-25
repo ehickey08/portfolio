@@ -5,15 +5,13 @@ import { DownOutlined } from '@ant-design/icons';
 
 export const IntroContainer = () => {
     return (
-        <>
-            <section className='intro container section'>
-                <div className='bio-container'>
-                    <IntroInfo />
-                    <IntroButtons />
-                </div>
-                <IntroImage />
-                <i class='fas fa-chevron-down'></i>
-            </section>
-        </>
+        <section className='intro container section'>
+            <div className='bio-container'>
+                <IntroInfo />
+                <IntroButtons />
+            </div>
+            <IntroImage />
+            <i class='fas fa-chevron-down'></i>
+        </section>
     );
 };

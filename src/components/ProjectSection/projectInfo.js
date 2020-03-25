@@ -1,10 +1,10 @@
-import pythonQuest from '../assets/pythonQuest.png';
-import voluntier from '../assets/voluntier.png';
-import treasure from '../assets/treasure-hunt.png';
-import creditCard from '../assets/creditcard.gif';
-import icn from '../assets/map2.png'
-import budgetScreenShot from '../assets/budget-shot.PNG'
-import potluckPlanner from '../assets/potluck-planner.png'
+import pythonQuest from '../../assets/pythonQuest.png';
+import voluntier from '../../assets/voluntier.png';
+import treasure from '../../assets/treasure-hunt.png';
+import creditCard from '../../assets/creditcard.gif';
+import icn from '../../assets/map2.png'
+import budgetScreenShot from '../../assets/budget-shot.PNG'
+import potluckPlanner from '../../assets/potluck-planner.png'
 
 export const projects = [
     {
