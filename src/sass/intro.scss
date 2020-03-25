@@ -3,7 +3,7 @@
 .intro.container {
     justify-content: space-between;
     height: 100vh;
-    min-height: 650px;
+    min-height: 100%;
 
     .image-container {
         width: 35%;
@@ -85,11 +85,12 @@
     }
 
     @media (max-width: $tablet) {
+        min-height: 815px;
         flex-direction: column-reverse;
         justify-content: center;
-        min-height: 800px;
+       
         .image-container {
-            width: 250px;
+            width: 50%;
         }
 
         .bio-container {
@@ -115,10 +116,7 @@
     }
 
     @media (max-width: 500px) {
-        .image-container {
-            width: 200px;
-        }
-
+        min-height: 720px;
         .bio-container {
             h1 {
                 font-size: 5rem;
@@ -130,10 +128,7 @@
     }
 
     @media (max-width: $mobileL) {
-        .image-container {
-            width: 175px;
-        }
-
+        min-height: 665px;
         .bio-container {
             h1 {
                 font-size: 4rem;
@@ -142,6 +137,7 @@
     }
 
     @media (max-width: 280px) {
+        min-height: 600px;
         .bio-container {
             h1 {
                 font-size: 3rem;
@@ -157,28 +153,4 @@
     }
 }
 
-// .scroll-to-container{
-//     position: absolute;
-//     top: 88%;
-//     left: 0;
-//     width: 100%;
-//     display: flex;
-//     justify-content: center;
-//     overflow-y: hidden;
-//     max-height: 100px;
-//     @include slide-in;
-// }
-
-// .scroll-to {
-//     font-size: $large;
-//     color: $accentColor;
-//     text-decoration: none;
-    
-//     display: flex;
-//     flex-direction: column;
-
-//     span{
-//         margin-top: 7px;
-//     }
-// }
 

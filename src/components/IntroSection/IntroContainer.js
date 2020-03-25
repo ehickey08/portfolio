@@ -14,12 +14,6 @@ export const IntroContainer = () => {
                 <IntroImage />
                 <i class='fas fa-chevron-down'></i>
             </section>
-            {/* <div className='scroll-to-container'>
-                <a className='scroll-to' href='#projects'>
-                    View Projects
-                    <DownOutlined />
-                </a>
-            </div> */}
         </>
     );
 };
