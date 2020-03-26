@@ -30,6 +30,10 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+
+    @media (max-height: 500px){
+        top: 100px;
+    }
 }
 
 .modal-header {
