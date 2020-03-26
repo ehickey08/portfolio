@@ -27,7 +27,6 @@
     top: 200px;
     width: 90%;
     max-width: 500px;
-    min-height: 200px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -42,10 +41,17 @@
     button {
         background: $white;
         border: none;
+        cursor: pointer;
     }
     .close-button {
         color: $lightGray;
         font-size: $large;
+    }
+
+    @media (max-width: 500px) {
+        .close-button {
+            font-size: 2rem;
+        }
     }
 }
 
@@ -53,7 +59,7 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 20px;
+    margin: 20px 0px 35px;
 
     .contact-col {
         display: flex;
@@ -74,18 +80,33 @@
     }
 
     .divider {
-        width:3px;
+        width: 3px;
         background-color: $lightGray;
     }
 
     @media (max-width: 500px) {
-        flex-direction: column;
-        margin-bottom: 30px;
+        .contact-col {
+            min-width: 120px;
+            .ant-icon {
+                font-size: 6rem;
+            }
 
-        .divider {
-            width: 40%;
-            height: 3px;
-            margin: 10px auto;
+            span {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    @media (max-width: $mobileM) {
+        .contact-col {
+            min-width: 90px;
+            .ant-icon {
+                font-size: 5rem;
+            }
+
+            span {
+                font-size: 1.2rem;
+            }
         }
     }
 }
