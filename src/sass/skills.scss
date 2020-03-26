@@ -1,37 +1,44 @@
 @import './variables.scss';
 
-
-.skills-header{
+.skills-header {
     margin-bottom: 15px;
     text-align: center;
 }
 .skills.container {
     flex-direction: column;
+    margin-bottom: 100px;
     max-width: 575px;
-    height: 800px;
-    margin: 20px auto;
-    padding: 20px 10px;
+    width: 95%;
+    height: fit-content;
+    min-height: 500px;
     box-shadow: $boxShadow;
     border: 1px solid $accentLight;
     border-radius: 5px;
     text-align: center;
+    padding: 15px 0px 30px;
+}
 
-    h3{
+.skill-group-container {   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h3 {
         margin: 10px 0;
         font-weight: normal;
     }
-}
 
-.skill-group-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+    .skill-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-.skill {
-    background: $accentLight;
-    font-size: $small;
-    padding: 5px 7px;
-    border-radius: 5px;
-    margin: 5px;
+    .skill {
+        background: $accentLight;
+        font-size: $small;
+        padding: 5px 7px;
+        border-radius: 5px;
+        margin: 5px;
+    }
 }

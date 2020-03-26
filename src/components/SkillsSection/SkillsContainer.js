@@ -10,14 +10,14 @@ export const SkillsContainer = () => {
             </h2>
             <div className='skills container'>
                 {skills.map(skillGroup => (
-                    <React.Fragment key={skillGroup.title}>
+                    <div key={skillGroup.title} className = "skill-group-container">
                         <h3>{skillGroup.title}</h3>
-                        <div className='skill-group-container'>
+                        <div className='skill-container'>
                             {skillGroup.skills.map(skill => (
                                 <Skill key={skill} data={skill} />
                             ))}
                         </div>
-                    </React.Fragment>
+                    </div>
                 ))}
             </div>
         </>
