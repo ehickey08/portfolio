@@ -19,17 +19,19 @@ export const ModalContainer = ({ setModalOpen }) => {
                             className='email-contact contact-col'
                             href='mailto:ehickey08@gmail.com'
                             rel='noopener noreferrer'
-                            title='email me'>
+                            title='Send an email'>
                             <MailOutlined className='ant-icon' />
+                            <span>ehickey08@gmail.com</span>
                         </a>
                         <div className = "divider"></div>
                         <a
                             className='linkedin-contact contact-col'
                             href='https://www.linkedin.com/in/ethan-hickey08/'
                             rel='noopener noreferrer'
-                            title='LinkedIn'
+                            title='Message on LinkedIn'
                             target='_blank'>
                             <LinkedinFilled className='ant-icon' />
+                            <span>ethan-hickey08</span>
                         </a>
                     </div>
                 </div>
