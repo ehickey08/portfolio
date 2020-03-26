@@ -10,10 +10,12 @@
 .nav-links {
     height: 60px;
 
-    a {
+    a, button {
         color: $white;
         font-size: $medium;
         text-decoration: none;
+        background: $darkGray;
+        border: none;
 
         &:hover{
             text-decoration: underline;

@@ -1,0 +1,91 @@
+@import './variables.scss';
+
+.modal-mask {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+.modal-wrap {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    overflow: auto;
+    outline: 0;
+}
+
+.modal-content {
+    background-color: $white;
+    position: relative;
+    top: 200px;
+    width: 90%;
+    max-width: 500px;
+    min-height: 200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $darkGray;
+    width: 100%;
+    padding: 10px 7px;
+
+    span {
+        font-size: $large;
+    }
+
+    button {
+        background: $white;
+        border: none;
+    }
+    .close-button {
+        color: $darkGray;
+        font-size: $medium;
+    }
+}
+
+.modal-body {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+
+    .contact-col {
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        align-items: center;
+
+        .ant-icon {
+            color: $accentColor;
+            font-size: 4rem;
+        }
+
+        span {
+            font-style: italic;
+            font-size: $large;
+            margin-top: 7px;
+
+
+            @media (max-width: $tablet) {
+                font-size: $medium;
+            }
+        }
+    }
+
+    @media (max-width: $mobileL) {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+}

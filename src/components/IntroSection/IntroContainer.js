@@ -1,17 +1,16 @@
 import React from 'react';
 import '../../sass/intro.scss';
 import { IntroImage, IntroButtons, IntroInfo } from './index';
-import { DownOutlined } from '@ant-design/icons';
 
-export const IntroContainer = () => {
+
+export const IntroContainer = ({setModalOpen}) => {
     return (
         <section className='intro container section'>
             <div className='bio-container'>
                 <IntroInfo />
-                <IntroButtons />
+                <IntroButtons setModalOpen = {setModalOpen}/>
             </div>
             <IntroImage />
-            <i class='fas fa-chevron-down'></i>
         </section>
     );
 };

@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^4.0.3",
-    "antd": "^3.26.14",
     "node-sass": "^4.13.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",

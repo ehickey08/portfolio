@@ -1,19 +1,18 @@
 import React from 'react';
 import '../../sass/introbuttons.scss';
 
-export const IntroButtons = () => {
+
+export const IntroButtons = ({setModalOpen}) => {
     return (
         <div className='button-container'>
-            <a
-                href='mailto:ehickey08@gmail.com'
-                rel='noopener noreferrer'
-                title='Email me'>
+            <button
+                onClick={() => setModalOpen(true)}>
                 <div className='left-col'>
                     <span className='snippet'>Get in touch with me</span>
                     <h4>Contact</h4>
                 </div>
                 <span className='arrow'>></span>
-            </a>
+            </button>
             <a
                 href='https://github.com/ehickey08'
                 title='GitHub'
@@ -28,3 +27,5 @@ export const IntroButtons = () => {
         </div>
     );
 };
+
+

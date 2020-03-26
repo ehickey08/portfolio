@@ -2,7 +2,7 @@ import React from 'react';
 import resume from '../assets/ethan-hickey-resume.pdf';
 import '../sass/header.scss';
 
-export const Navigation = () => {
+export const Navigation = ({ setModalOpen }) => {
     return (
         <nav className='nav'>
             <ul className='list nav-links container'>
@@ -15,11 +15,7 @@ export const Navigation = () => {
                     </a>
                 </li>
                 <li>
-                    <a
-                        href='mailto:ehickey08@gmail.com'
-                        rel='noopener noreferrer'>
-                        contact
-                    </a>
+                    <button onClick={() => setModalOpen(true)}>contact</button>
                 </li>
             </ul>
         </nav>
