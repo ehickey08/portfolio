@@ -36,14 +36,9 @@
 
 .modal-header {
     display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid $darkGray;
+    justify-content: flex-end;
     width: 100%;
     padding: 10px 7px;
-
-    span {
-        font-size: $large;
-    }
 
     button {
         background: $white;
@@ -51,7 +46,7 @@
     }
     .close-button {
         color: $darkGray;
-        font-size: $medium;
+        font-size: $large;
     }
 }
 
@@ -59,7 +54,7 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 40px;
+    margin-top: 20px;
 
     .contact-col {
         display: flex;
@@ -69,19 +64,13 @@
 
         .ant-icon {
             color: $accentColor;
-            font-size: 4rem;
+            font-size: 8rem;
         }
+    }
 
-        span {
-            font-style: italic;
-            font-size: $large;
-            margin-top: 7px;
-
-
-            @media (max-width: $tablet) {
-                font-size: $medium;
-            }
-        }
+    .divider {
+        width:3px;
+        background-color: $lightGray;
     }
 
     @media (max-width: $mobileL) {

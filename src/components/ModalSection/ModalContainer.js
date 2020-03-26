@@ -10,7 +10,6 @@ export const ModalContainer = ({ setModalOpen }) => {
                     className='modal-content'
                     onClick={e => e.stopPropagation()}>
                     <div className='modal-header'>
-                        <span>Contact</span>
                         <button onClick={() => setModalOpen(false)}>
                             <CloseOutlined className='close-button' />
                         </button>
@@ -22,8 +21,8 @@ export const ModalContainer = ({ setModalOpen }) => {
                             rel='noopener noreferrer'
                             title='email me'>
                             <MailOutlined className='ant-icon' />
-                            <span>ehickey08@gmail.com</span>
                         </a>
+                        <div className = "divider"></div>
                         <a
                             className='linkedin-contact contact-col'
                             href='https://www.linkedin.com/in/ethan-hickey08/'
@@ -31,7 +30,6 @@ export const ModalContainer = ({ setModalOpen }) => {
                             title='LinkedIn'
                             target='_blank'>
                             <LinkedinFilled className='ant-icon' />
-                            <span>ethan-hickey08</span>
                         </a>
                     </div>
                 </div>
